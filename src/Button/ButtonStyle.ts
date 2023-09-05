@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const ButtonStyle = styled.button<{color: string, circular: boolean}>`
-    background-color: red;
+    background-color: ${(props: any) => props.color};
     color: white;
     width: 100%;
     cursor: pointer;
-    border-radius: ${(props) => props.circular ? 40 : 5}px;
+    border-radius: ${(props: any) => props.circular ? 40 : 5}px;
     border-style: none;
     box-sizing: border-box;
     height: 40px;
