@@ -22,7 +22,8 @@
     "build-storybook": "storybook build"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16",
+    "styled-components": "^6.0.7"
   },
   "husky": {
     "hooks": {
@@ -35,7 +36,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "ui-kit-elementar-1",
+  "name": "ui-kit-elementar",
   "author": "Lucas Moreira Nunes",
   "module": "dist/ui-kit-elementar-1.esm.js",
   "size-limit": [
@@ -70,6 +71,7 @@
     "react-is": "^18.2.0",
     "size-limit": "^8.2.6",
     "storybook": "^7.4.0",
+    "styled-components": "^6.0.7",
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
     "typescript": "^3.9.10"
