@@ -10,10 +10,10 @@ export const FormGroup = styled.div`
         font-family: inherit;
         width: 100%;
         border: none;
-        border-bottom: 2px solid ${props => props.color};
+        border-bottom: 2px solid ${(props: any) => props.color};
         outline: 0;
         font-size: 17px;
-        color: ${props => props.color};
+        color: ${(props: any) => props.color};
         padding: 7px 0;
         background: transparent;
         transition: border-color 0.2s;
@@ -32,7 +32,7 @@ export const FormGroup = styled.div`
             padding-bottom: 6px;
             font-weight: 700;
             border-width: 3px;
-            border-image: var(${props => props.color});
+            border-image: ${(props: any) => props.color};
             border-image-slice: 1;
         }
     }
@@ -43,7 +43,7 @@ export const FormGroup = styled.div`
         display: block;
         transition: 0.2s;
         font-size: 17px;
-        color: var(--${props => props.color});
+        color: ${(props: any) => props.color};
         font-weight: 700;
     }
 
