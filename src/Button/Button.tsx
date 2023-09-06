@@ -11,7 +11,7 @@ export interface ButtonProps {
 
 export function Button({text, hexadecimal, action, circular, disabled}: ButtonProps) {
     return (
-        <ButtonStyle circular={circular || false} color={ '#' + hexadecimal} onClick={action} disabled={disabled}>
+        <ButtonStyle circular={circular || false} color={ '#' + hexadecimal} onClick={() => {action()}} disabled={disabled}>
             {text}
         </ButtonStyle>
     );
