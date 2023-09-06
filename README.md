@@ -6,7 +6,7 @@ O Elementar é um moderno Ui Kit desenvolvido em React com TypeScript, projetado
 
 Para utilizar o Elementar em um ambiente de desenvolvimento, siga as instruções abaixo:
 
-1. Certifique-se de ter o Node.js instalado em sua máquina.
+1. Certifique-se de ter o Node.js >= 16.x instalado em sua máquina.
 2. Rode o comando `npm i ui-kit-elementar`.
 3. Importe o componente e o utilize!
 
