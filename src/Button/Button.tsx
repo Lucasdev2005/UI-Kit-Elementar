@@ -4,7 +4,7 @@ import { ButtonStyle } from "./ButtonStyle";
 export interface ButtonProps {
     text: string;
     hexadecimal: string;    
-    action: (param?: any) => any;
+    action: (...args: any[]) => any;
     circular?: boolean;
     disabled?: boolean
 }
