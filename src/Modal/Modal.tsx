@@ -9,7 +9,7 @@ export interface ModalProps {
 export function Modal({children}: ModalProps) {
    return (
     <ModalStyle>
-        <h1>Olás</h1>
+        {children}
     </ModalStyle>
    )
 }
