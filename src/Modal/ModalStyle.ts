@@ -10,14 +10,14 @@ export const ModalStyle = styled.div`
     background-color: red;
 
     .modal-content {
-        position: absolute; /* Posicionamento absoluto dentro do modal */
-        top: 50%; /* Centralize verticalmente */
-        left: 50%; /* Centralize horizontalmente */
-        transform: translate(-50%, -50%); /* Centralize completamente */
-        background-color: #fff; /* Cor de fundo do modal */
-        padding: 20px; /* Espaçamento interno */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
         border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para estilo */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     button {
@@ -33,8 +33,8 @@ export const ModalStyle = styled.div`
         }
 
         &:active {
-            scale: 1.5;
-            transition: scale 0.5s;
+            transform: scale(1.1);
+            transition: transform 0.2s;
         }
     }
 
