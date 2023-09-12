@@ -20,4 +20,22 @@ export const ModalStyle = styled.div`
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para estilo */
     }
 
+    button {
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        font-size: 20px;
+
+        &:hover {
+            transition: filter 0.3s;
+            filter: brightness(1.7);
+        }
+
+        &:active {
+            scale: 1.5;
+            transition: scale 0.5s;
+        }
+    }
+
 `;
