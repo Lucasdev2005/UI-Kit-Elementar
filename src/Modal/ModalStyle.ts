@@ -6,8 +6,9 @@ export const ModalStyle = styled.div`
     padding: 5%;
     width: 100%;
     height: 100%;
+    overflow: auto;
     z-index: 9999;
-    background-color: red;
+    background-color: rgba(0,0,0,0.4);
 
     .modal-content {
         position: absolute;
@@ -16,6 +17,7 @@ export const ModalStyle = styled.div`
         transform: translate(-50%, -50%);
         background-color: #fff;
         padding: 20px;
+        background-color: white;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }

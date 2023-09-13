@@ -26,8 +26,10 @@ export function Modal({children, isOpen}: ModalProps) {
             {
                 modalState && (
                     <ModalStyle className="modal">
-                        <button onClick={handleClickCloseModal}>x</button>
-                        {children}
+                       <div className="modal-content">
+                            <button onClick={handleClickCloseModal}>x</button>
+                            {children}
+                       </div>
                     </ModalStyle>
                 )
             }
