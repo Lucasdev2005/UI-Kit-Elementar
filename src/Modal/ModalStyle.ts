@@ -9,9 +9,9 @@ export const ModalStyle = styled.div`
     overflow: auto;
     z-index: 9999;
     background-color: rgba(0,0,0,0.4);
+    position: absolute;
 
     .modal-content {
-        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
