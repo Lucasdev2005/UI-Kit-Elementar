@@ -9,7 +9,7 @@ export interface ModalProps {
 }
 
 export function Modal({children, isOpen}: ModalProps) {
-
+ 
     useEffect(() => {
         setModalState(isOpen);
     }, [isOpen])
