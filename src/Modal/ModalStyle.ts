@@ -1,26 +1,23 @@
 import styled from "styled-components";
 
 export const ModalStyle = styled.div`
-    top: 0;
-    left: 0;
     padding: 5%;
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    z-index: 9999;
-    background-color: rgba(0,0,0,0.4);
-    position: absolute;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
 
     .modal-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #fff;
+        background-color: #fefefe;
+        margin: 15% auto;
         padding: 20px;
-        background-color: white;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        border: 1px solid #888;
+        width: 80%;
     }
 
     button {
