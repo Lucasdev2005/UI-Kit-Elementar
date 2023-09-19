@@ -16,8 +16,11 @@ export const ModalStyle = styled.div`
 
     .modal-content {
         background-color: #fefefe;
+        display: flex;
+        justify-content: center;
         max-width: 80%;
         width: 80%;
+        display: grid;
     }
 
     button {
@@ -26,6 +29,7 @@ export const ModalStyle = styled.div`
         outline: none;
         border: none;
         font-size: 20px;
+        justify-self: end;
 
         &:hover {
             transition: filter 0.3s;
