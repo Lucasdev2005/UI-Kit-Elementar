@@ -8,7 +8,7 @@ export interface ModalProps {
     onClose?: (...params: any[]) => any
 }
 
-export function Modal({children, isOpen}: ModalProps) {
+export function Modal({children, isOpen, onClose}: ModalProps) {
 
     useEffect(() => {
         setModalState(isOpen);
@@ -19,6 +19,9 @@ export function Modal({children, isOpen}: ModalProps) {
     function handleClickCloseModal() {
         isOpen = false;
         setModalState(false)
+        if (onClose) {
+            onClose();
+        }
     }
 
     return (
