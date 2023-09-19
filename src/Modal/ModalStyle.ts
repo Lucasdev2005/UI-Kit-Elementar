@@ -16,11 +16,14 @@ export const ModalStyle = styled.div`
 
     .modal-content {
         background-color: #fefefe;
-        display: flex;
-        justify-content: center;
         max-width: 80%;
         width: 80%;
         display: grid;
+
+        .modal-children {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     button {
