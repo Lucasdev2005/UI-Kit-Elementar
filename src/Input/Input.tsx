@@ -6,12 +6,13 @@ export interface InputProps {
     placeHolder: string,
     setModel: (event: any) => any,
     disabled?: boolean,
-    hexadecimal: string
+    hexadecimal: string,
+    classname?: string
 }
 
-export function Input({type, placeHolder , setModel, disabled, hexadecimal}: InputProps) {
+export function Input({type, placeHolder , setModel, disabled, hexadecimal, classname}: InputProps) {
     return (
-        <FormGroup color={'#'+ hexadecimal}>
+        <FormGroup color={'#'+ hexadecimal} className={classname}>
             <input onChange={event => setModel(event.target.value)} type={type} className="form__field" placeholder={placeHolder} disabled={disabled} />
             <label htmlFor={placeHolder} className="form__label">{placeHolder}</label>
         </FormGroup>
