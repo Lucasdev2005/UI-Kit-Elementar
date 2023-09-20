@@ -6,12 +6,13 @@ export interface ButtonProps {
     hexadecimal: string;    
     action: (...args: any[]) => any;
     circular?: boolean;
-    disabled?: boolean
+    disabled?: boolean,
+    className?: string
 }
 
-export function Button({text, hexadecimal, action, circular, disabled}: ButtonProps) {
+export function Button({text, hexadecimal, action, circular, disabled, className}: ButtonProps) {
     return (
-        <ButtonStyle circular={circular || false} color={ '#' + hexadecimal} onClick={() => {action()}} disabled={disabled}>
+        <ButtonStyle className={className} circular={circular || false} color={ '#' + hexadecimal} onClick={() => {action()}} disabled={disabled}>
             {text}
         </ButtonStyle>
     );
