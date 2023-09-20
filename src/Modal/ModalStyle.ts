@@ -35,7 +35,7 @@ export const ModalStyle = styled.div`
         border: none;
         font-size: 20px;
         justify-self: end;
-
+            
         &:hover {
             transition: filter 0.3s;
             filter: brightness(1.7);
@@ -43,7 +43,7 @@ export const ModalStyle = styled.div`
 
         &:active {
             transform: scale(1.1);
-            transition: transform 0.2s;
+            transition: transform 0.9s all;
         }
     }
 
