@@ -6,7 +6,7 @@ export interface ModalProps {
     children: ReactNode,
     isOpen: boolean
     onClose?: (...params: any[]) => any,
-    className: string
+    className?: string
 }
 
 export function Modal({children, isOpen, onClose, className}: ModalProps) {
@@ -26,15 +26,15 @@ export function Modal({children, isOpen, onClose, className}: ModalProps) {
     }
 
     function classConcat(): string {
-        return `modal ${className}`;
+        return `modal-content ${className}`;
     }
 
     return (
         <>
             {
                 modalState && (
-                    <ModalStyle className={classConcat()}>
-                       <div className="modal-content">
+                    <ModalStyle className="modal">
+                       <div className={classConcat()}>
                             <button onClick={handleClickCloseModal}>x</button>
                             <div className="modal-children">
                                 {children}
