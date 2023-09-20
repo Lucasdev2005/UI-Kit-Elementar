@@ -17,6 +17,8 @@ export const ModalStyle = styled.div`
     .modal-content {
         background-color: #fefefe;
         max-width: 80%;
+        max-height: 80%;
+        height: auto;
         width: 80%;
         display: grid;
 
