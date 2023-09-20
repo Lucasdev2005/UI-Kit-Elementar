@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ButtonStyle = styled.button<{color: string, circular: boolean}>`
-    background-color: ${(props: any) => props.color};
+    background-color: ${(props: any) => props.color} !important;
     color: white;
     width: 100%;
     cursor: pointer;

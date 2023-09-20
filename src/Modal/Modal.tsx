@@ -5,10 +5,11 @@ import React from "react";
 export interface ModalProps {
     children: ReactNode,
     isOpen: boolean
-    onClose?: (...params: any[]) => any
+    onClose?: (...params: any[]) => any,
+    className: string
 }
 
-export function Modal({children, isOpen, onClose}: ModalProps) {
+export function Modal({children, isOpen, onClose, className}: ModalProps) {
 
     useEffect(() => {
         setModalState(isOpen);
@@ -24,11 +25,15 @@ export function Modal({children, isOpen, onClose}: ModalProps) {
         }
     }
 
+    function classConcat(): string {
+        return `modal ${className}`;
+    }
+
     return (
         <>
             {
                 modalState && (
-                    <ModalStyle className="modal">
+                    <ModalStyle className={classConcat()}>
                        <div className="modal-content">
                             <button onClick={handleClickCloseModal}>x</button>
                             <div className="modal-children">
