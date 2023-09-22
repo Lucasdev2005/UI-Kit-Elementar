@@ -8,10 +8,10 @@ export interface BoxProps {
     w?: number;
     h?: number;
     backgroundColor?: "white" | string;
-    content: ReactNode
+    children: ReactNode
 }
 
-export function Box({display, justifyContent, alignItems, w, h, backgroundColor, content}: BoxProps) {
+export function Box({display, justifyContent, alignItems, w, h, backgroundColor, children}: BoxProps) {
 
     return (
         <BoxStyle 
@@ -22,7 +22,7 @@ export function Box({display, justifyContent, alignItems, w, h, backgroundColor,
             h={(h) ? h + '%' : '100%'} 
             backgroundColor={(backgroundColor) ? backgroundColor : "white"}
         >
-            {content}
+            {children}
         </BoxStyle>
     );
 }
