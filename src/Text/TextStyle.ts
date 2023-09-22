@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 interface TextStyleProps {
     bold?: boolean;
-    fontSize?: "large" | "larger" | "medium" | "small" | "smaller"
+    fontSize?: "large" | "larger" | "medium" | "small" | "smaller",
+    align?: "center" | "end" | "start"
 }
 
 export const TextStyle = styled.div<TextStyleProps>`
@@ -11,6 +12,12 @@ export const TextStyle = styled.div<TextStyleProps>`
     ${(props: TextStyleProps) => {
         if (props.fontSize) {
             return `font-size: ${props.fontSize};`
+        }
+        return "";
+    }}
+    ${(props: TextStyleProps) => {
+        if (props.align) {
+            return `text-align: ${props.align};`
         }
         return "";
     }}
