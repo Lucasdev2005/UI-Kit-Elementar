@@ -1,7 +1,17 @@
 import styled from "styled-components";
 
-export const TextStyle = styled.div`
-    width: 100%;
+interface TextStyleProps {
+    bold?: boolean;
+    fontSize?: "large" | "larger" | "medium" | "small" | "smaller"
+}
 
-    font-weight: bold;
+export const TextStyle = styled.div<TextStyleProps>`
+    width: 100%;
+    font-weight: ${(props) => (props.bold ? "bold" : "normal")};
+    ${(props) => {
+        if (props.fontSize) {
+            return `font-size: ${props.fontSize};`
+        }
+        return "";
+    }}
 `;

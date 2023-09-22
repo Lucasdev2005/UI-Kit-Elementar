@@ -3,12 +3,13 @@ import { TextStyle } from "./TextStyle";
 
 export interface TextProps {
     text: string,
-    bold?: boolean
+    bold?: boolean,
+    fontSize?: "large" | "larger" | "medium" | "small" | "smaller"
 }
 
-export function Text({text, bold}: TextProps) {
+export function Text({text, bold, fontSize}: TextProps) {
     return (
-        <TextStyle>
+        <TextStyle bold={bold} fontSize={fontSize}>
             {text}
         </TextStyle>
     );
