@@ -7,8 +7,8 @@ interface TextStyleProps {
 
 export const TextStyle = styled.div<TextStyleProps>`
     width: 100%;
-    font-weight: ${(props) => (props.bold ? "bold" : "normal")};
-    ${(props) => {
+    font-weight: ${(props: TextStyleProps) => (props.bold ? "bold" : "normal")};
+    ${(props: TextStyleProps) => {
         if (props.fontSize) {
             return `font-size: ${props.fontSize};`
         }
