@@ -19,6 +19,6 @@ export const TextStyle = styled.div<TextStyleProps>`
         if (props.align) {
             return `text-align: ${props.align};`
         }
-        return "";
+        return "text-align: start;";
     }}
 `;
