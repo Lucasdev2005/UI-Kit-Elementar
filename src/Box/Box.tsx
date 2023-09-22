@@ -8,13 +8,15 @@ export interface BoxProps {
     w?: number;
     h?: number;
     backgroundColor?: "white" | string;
-    children: ReactNode
+    children: ReactNode,
+    className?: string
 }
 
-export function Box({display, justifyContent, alignItems, w, h, backgroundColor, children}: BoxProps) {
+export function Box({display, justifyContent, alignItems, w, h, backgroundColor, children, className}: BoxProps) {
 
     return (
-        <BoxStyle 
+        <BoxStyle
+            className={className}
             display={display}
             justifyContent={(justifyContent) ? justifyContent : ""} 
             alignItems={(alignItems) ? alignItems : "center"} 
